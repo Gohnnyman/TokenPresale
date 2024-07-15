@@ -1,0 +1,20 @@
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+presale_contract = "E3Vym3TLZdcSuyPNAG6ApHchakiKHBYZs5tNzSxtUhUL"
+
+[registry]
+url = ""
+
+[provider]
+cluster = "Localnet"
+wallet = "/home/gohnny/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+
+
+[toolchain]
+anchor_version = "0.28.1"
